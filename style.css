@@ -186,7 +186,7 @@ h1 {
         gap: 12px 0;
         margin: 20px 0;
         padding: 3px;
-        overflow: visible;
+        overflow: hidden;
     }
 
     .navigation__menu__scroll a {
@@ -240,7 +240,7 @@ h1 {
         flex-wrap: wrap;
         margin: 24px 0;
         padding: 8px 0;
-        overflow: visible;
+        overflow: hidden;
     }
 
     .navigation__menu__scroll a {
