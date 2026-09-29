@@ -20,6 +20,8 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     padding: 16px;
+    height: auto;
+    background: ghostwhite;
 }
 
 .logo__image {
@@ -28,32 +30,34 @@ body {
 }
 
 .logo__image img {
-    width: 30px;
+    width: 40px;
     height: 30px;
-    margin-left: 20px;
+    margin-left:10px;
 }
 
 .header__elements {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px 8px;
+    gap:10px ;
     padding: 10px 0;
 }
 
 .header__item {
-    width: 18px;
-    height: 18px;
+    width: 40px;
+    height: 30px;
     flex: 0 0 auto;
 }
 
 h1 {
-    grid-column: 1 / -1;
-    font-size: 28px;
-}
+    font-size: 20px;  
+    border-left: 4px solid hsl(120, 100%, 
+    25%); 
+    margin-top: 10px;
+} 
 
 .header__action {
-    font-size: 12px;
+    font-size: 20px;
     line-height: 1.2;
     white-space: nowrap;
 }
@@ -65,14 +69,14 @@ h1 {
     margin: 16px -16px;
     padding: 10px 0;
     overflow-x: auto;
-    color: lightgray;
     white-space: nowrap;
+    
 }
 
 .navigation__menu__scroll a {
     padding: 0 12px;
     color: black;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
 }
@@ -124,7 +128,7 @@ h1 {
 }
 
 .content__image {
-    width: 90%;
+    width: 100%;
     margin: 8px 0 0;
 }
 
@@ -138,6 +142,10 @@ h1 {
     display: inline-block;
     margin-top: 12px;
     font-size: 16px;
+}
+.chevron__icon{
+    background-color: #f2f2e5;
+    margin-left: 3px;
 }
 
 @media (max-width: 767px) {
