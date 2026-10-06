@@ -28,27 +28,18 @@ body {
     flex-direction: row;
     display: none;
     display: flex;
-    margin:20px;
 
-}
-
-.header__logo img{
-    width: 40px;
-    height: 40px;
-    margin-left:15px;
-    gap:10px;
-    
-}
+} 
 .header__logo-icon{
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-    width: 40px;
-    height: 30px;
+display: flex;
+width: 30px;
+height: 40px;
+margin: 10px;
+margin-left:40px;
     
-
-
 }
+
+
 .services__top {
     display: flex;
     align-items: center;
@@ -160,6 +151,7 @@ body {
 
     .services {
         padding: 30px;
+        width: 400px;
     }
 
     .services__top {
@@ -179,11 +171,6 @@ body {
     .services__title{
         margin: 0 auto 0 0;
         font-size: 30px;
-    }
-
-    .header__logo-icon {
-        font-size: 16px;
-        margin:100px;
     }
 
     .navigation__menu__scroll {
