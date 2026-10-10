@@ -9,7 +9,7 @@
     border: 3px solid ghostwhite;
     background:lightgray;
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size:20px;
     font-style: normal;
     overflow: hidden;
     max-width: 100%;
@@ -47,9 +47,11 @@
 }
 
 .header__icon {
-    display:block;
-    width: auto;
+    display: block;
+    flex: 0 0 24px;
+    width: 40px;
     height: 24px;
+    object-fit: contain;
 }
 
 .header__button--tablet-only,
@@ -97,7 +99,6 @@
     display: none;
     align-items: center;
     gap: 8px;
-    font-size: 16px;
     line-height: 1.2;
     text-decoration: none;
     white-space: nowrap;
@@ -133,7 +134,6 @@
     min-height: 40px;
     padding: 8px 12px;
     color: #000;
-    font-size: 14px;
     text-align: center;
     text-decoration: none;
 }
@@ -161,9 +161,11 @@
 
 .hero__text {
     line-height: 1.5;
+    text-align: justify;
 }
 .hero__text-hidden{
     display: none;
+    text-align: justify;
 }
 
 .read__more {
