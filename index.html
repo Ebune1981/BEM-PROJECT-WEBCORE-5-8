@@ -10,42 +10,67 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="services">
-        <header class="header">
-            <img class="header__logo-icon" src="./icon-chat.svg" alt="icon-chat">
-            <img class="header__logo-icon"src="./icon-logo.png" alt="icon-logo" >
-            <img class="header__logo-icon"src="./icon-repair.svg" alt="icon-repair">
-            <img class="header__log-icon"src="./icon-status.svg" alt="icon-status">
-            <img class="header__logo-icon"src="./icon-call.jpg" alt="icon-call">
-            <img class="header__logo-icon"src="./icon-chat.svg" alt="icon-chat">
-            <img class="header__logo-icon"src="./icon-profile.svg" alt="icon-profile">
-        </header>
+    <div class="container">
+    <header class="header">
+        <button class="header__button header__button--tablet-only" aria-label="menu">
+            <img class="header__icon" src="./icon-menu.svg" alt="">
+        </button>
+        <button class="header__button header__button--tablet-only" aria-label="logo" >
+            <img class="header__icon" src="./icon-logo.png" alt="">
+        </button>
+        <button class="header__button header__button--tablet-only" aria-label="repair">
+            <img class="header__icon" src="./icon-repair.svg" alt="">
+        </button>
+        <button class="header__button header__button--tablet-only" aria-label="serch" >
+            <img class="header__icon"src="icon-search.png" alt="">
+        </button>
+         <button class="header__button header__button--tablet-only" aria-label="Call us">
+            <img class="header__icon" src="./icon-call.jpg" alt="">
+        </button>
+        <button class="header__button header__button--tablet-only" aria-label="Chat with us">
+           <img class="header__icon" src="./icon-chat.svg" alt="">
+        </button>
+       <button class="header__button header__button--tablet-only" aria-label="View profile">
+        <img class="header__icon" src="./icon-profile.svg" alt="">
+      </button>
+      <span class="header__divider header__divider--tablet-only"></span>
+      <div class="header__actions">
+     <a class="header__button" href="#" aria-label="Submit a request">
+        <img class="header__icon" src="./icon-repair.svg" alt="">
+    </a>
+    <a class="header__button" href="#" aria-label="Repair status">
+        <img class="header__icon" src="./icon-status.svg" alt="">
+    </a>
+</div>
+    </header>
         <main class="service">
         <div class="services__top">
-            <h1 class="services__title"> Service and Support</h1>
+            <h1 class="services__title"> Services and Support</h1>
         <div class="services__actions">
            <a class="service__action" href="#"> Submit a request<img class="services__action-icon"src="./icon-repair.svg" alt=" icon-repair"></a>
            <a class="service__action" href="#"> Repairt status<img class="services__action-icon"src="./icon-menu.svg"  alt=" icon-menu"></a>
          </div>
         </div>
-        <section class="navigation">
-            <div class="navigation__items-scroll">
-                <button class="navigation__link--active"> Brand we Repair</button>
-                <a class="navigation__link" href="#">Device We Repair</a>
-                <a class="navigation__link" href="#">Service Price</a>
-                <a class="navigation__link" href="#">Address of Service Centers</a>
-                <a class="navigation__link" href="#">Special Price</a>
-                <a class="navigation__link" href="#">Review</a>
-            </div>
-        </section>
+        <nav class="navigation" aria-label="Service information">
+            <ul class="navigation__items-scroll">
+                <li><a class="navigation__link--active" href="#" aria-current="page">Brands we repair</a></li>
+                <li><a class="navigation__link" href="#">Device we repair</a></li>
+                <li><a class="navigation__link" href="#">Services price</a></li>
+                <li><a class="navigation__link" href="#">Address of service centers</a></li>
+                <li><a class="navigation__link" href="#">Special prices</a></li>
+                <li><a class="navigation__link" href="#">Reviews</a></li>
+            </ul>
+        </nav>
         <section class="hero">
-            <p class="hero__content">
-                We are an authorised service centre for Dell equipment repairs. Only with us can you repair your Dell laptop with the official manufacturer's warranty.We have been successfully operating since 1992 and have earned a reputation as a reliable partner, as evidenced by our large number of loyal customers. We take pride in the fact that clients come to us through recommendations and, in turn, recommend us to their family and friends.
-            </p> 
-            <p class="hero__content">
-                We have been successfully operating since 1992 and have earned a reputation as a reliable partner, as evidenced by our large number of loyal customers. We take pride in the fact that clients come to us through recommendations and, in turn, recommend us to their family and friends
-            </p>
-            <span class="read__more"> <img src="./icon-chevron.svg" alt="" class="chevron__icon">Read More</span>
+            <div class="hero__content">
+                <p class="hero__text">
+                    We are an authorised service centre for Dell equipment repairs. Only with us can you repair your Dell laptop with the official manufacturer's warranty.We have been successfully operating since 1992 and have earned a reputation as a reliable partner, as evidenced by our large number of loyal customers. We take pride in the fact that clients come to us through recommendations and, in turn, recommend us to their family and friends.
+                </p>
+                <p class="hero__text-hidden">
+                    We have been successfully operating since 1992 and have earned a reputation as a reliable partner, as evidenced by our large number of loyal customers. We take pride in the fact that clients come to us through recommendations and, in turn, recommend us to their family and friends
+                </p>
+                <span class="read__more"><img src="./icon-chevron.svg" alt="" class="chevron__icon">Read More</span>
+            </div>
             <div class="content__image">
                 <img src="./icon-image.png" alt="content image" class="hero__img">
             </div>
