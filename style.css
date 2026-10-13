@@ -6,12 +6,12 @@
 
  html,body {
     min-width: 320px;
-    border: 3px solid ghostwhite;
-    background:lightgray;
+    border: 2px hsl(180, 15%, 95%);
+    background:hsl(180, 15%, 95%);
     font-family: "Roboto", sans-serif;
     font-size:20px;
     font-style: normal;
-    overflow: hidden;
+    overflow: scroll;
     max-width: 100%;
 
 }
@@ -27,12 +27,14 @@
 
 .header {
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     gap: 12px;
     min-width: 0;
     margin: 0 -16px;
     padding: 12px 16px;
     background: #fff;
+    
 }
 
 .header__button {
@@ -44,6 +46,7 @@
     background: none;
     cursor: pointer;
     text-decoration: none;
+;
 }
 
 .header__icon {
@@ -81,7 +84,6 @@
 .services__title {
     margin-top: 10px;
     border-left: 4px solid turquoise;
-    font-size: 20px;
     font-weight: bold;
 }
 
@@ -95,7 +97,7 @@
     height: 30px;
 }
 
-.service__action {
+.services__action {
     display: none;
     align-items: center;
     gap: 8px;
@@ -157,7 +159,6 @@
     flex-direction: column;
     align-items: stretch;
     gap: 16px;
-    font-family: "Roboto", sans-serif;
 }
 
 .hero__content {
@@ -175,25 +176,36 @@
     text-align: justify;
 }
 
-.read__more {
+.hero__more {
     display: inline-flex;
     align-items: center;
     align-self: flex-start;
-    gap: 4px;
+    gap: 6px;
     margin-top: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    
 }
 
-.chevron__icon {
-    background:turquoise;
+.hero__more-text {
+    color: inherit;
+    text-decoration: none;
 }
 
-.content__image {
-    width: 100%;
+.hero__more-icon {
+    width: 16px;
+    height: 16px;
+    color: #1ec9c9;
+    flex-shrink: 0;
+}
+
+.hero__picture {
+    width:100%px;
 }
 
 .hero__img {
+    width:100%;
     display: block;
-    width: 100%;
     height: auto;
 }
 
@@ -213,6 +225,7 @@
     .header__button--tablet-only,
     .header__divider--tablet-only {
         display: inline-flex;
+        margin: 20px;
     }
 
     .navigation {
@@ -238,7 +251,7 @@
     }
 
     .hero__content,
-    .content__image {
+    .hero__picture {
         flex: 1 1 0;
         min-width: 0;
     }
@@ -281,7 +294,7 @@
         margin-left: auto;
     }
 
-    .service__action {
+    .services__action {
         display: inline-flex;
     }
 
