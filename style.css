@@ -5,13 +5,11 @@
 }
 
  html,body {
-    min-width: 320px;
     border: 2px hsl(180, 15%, 95%);
-    background:hsl(180, 15%, 95%);
+    background:#f7f7f7;
     font-family: "Roboto", sans-serif;
-    font-size:20px;
+    font-size:14px;
     font-style: normal;
-    overflow: scroll;
     max-width: 100%;
 
 }
@@ -22,23 +20,23 @@
     width: 100%;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 0 16px 24px;
+    padding: 16px 24px 35px;
 }
 
 .header {
     display: flex;
+    min-width: 320px;
     flex-shrink: 0;
     align-items: center;
     gap: 12px;
     min-width: 0;
-    margin: 0 -16px;
     padding: 12px 16px;
     background: #fff;
     
 }
 
 .header__button {
-    display: inline-flex;
+    display:flex;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -56,6 +54,9 @@
     height: 24px;
     object-fit: contain;
 }
+.header__button--visible--tablet{
+    display: none;
+}
 
 .header__button--tablet-only,
 .header__divider--tablet-only {
@@ -68,13 +69,6 @@
     height: 32px;
     background: #ddd;
 }
-
-.header__actions {
-    display: flex;
-    gap: 12px;
-    margin-left: auto;
-}
-
 .services__top {
     display: flex;
     align-items: center;
@@ -85,6 +79,10 @@
     margin-top: 10px;
     border-left: 4px solid turquoise;
     font-weight: bold;
+    font-size: 28px;
+    text-align: justify;
+    padding-left: 10px;
+    margin-left: -10px;
 }
 
 .services__action {
@@ -123,7 +121,7 @@
     display: none;
 }
 
-.navigation__items-scroll {
+.navigation__list-scroll {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -132,7 +130,7 @@
     white-space: nowrap;
 }
 
-.navigation__items-scroll li {
+.navigation__list-scroll li {
     flex: 0 0 auto;
 }
 
@@ -142,16 +140,17 @@
     align-items: center;
     min-height: 44px;
     padding: 8px 12px;
-    color: #000;
+    color:gray;
     text-align: center;
     text-decoration: none;
 }
 
 .navigation__link--active{
-    border: 4px solid turquoise;
-    border-radius: 10px;
+    border: 2px solid #b2f0e8;
+    border-radius: 4px;
     background: transparent;
     white-space: nowrap;
+    
 }
 
 .hero {
@@ -171,9 +170,14 @@
     line-height: 1.5;
     text-align: justify;
 }
-.hero__text-hidden{
+.hero__text--visible--tablet{
     display: none;
     text-align: justify;
+    line-height: 1.5;
+}
+
+.hero__text--visible--tablet:target {
+    display: block;
 }
 
 .hero__more {
@@ -184,7 +188,8 @@
     margin-top: 4px;
     font-weight: 500;
     cursor: pointer;
-    
+    color: inherit;
+    text-decoration: none;
 }
 
 .hero__more-text {
@@ -207,12 +212,14 @@
     width:100%;
     display: block;
     height: auto;
+
 }
 
 @media (min-width: 768px) {
     .container {
         padding-right: 24px;
         padding-left: 24px;
+        font-size: 16px;
     }
 
     .header {
@@ -220,6 +227,10 @@
         margin-left: -24px;
         padding-right: 24px;
         padding-left: 24px;
+    }
+    .header__button--visible--tablet{
+        display: inline-flex;
+        gap:300px;
     }
 
     .header__button--tablet-only,
@@ -246,7 +257,7 @@
         align-items: flex-start;
         gap: 24px;
     }
-    .hero__text-hidden{
+    .hero__text--visible--tablet{
         display: block;
     }
 
@@ -258,12 +269,17 @@
     .services__action-icon{
         display: none;
     }
+    .services__title{
+        font-size: 28px;
+    }
 }
 
 @media (min-width: 1024px) {
     .container {
         max-width: 1200px;
         padding: 0 32px 32px;
+        font-size: 16px;
+        flex-wrap: wrap;
     }
 
     .header {
@@ -273,8 +289,8 @@
         padding-left: 32px;
     }
 
-    .header__button--tablet-only,
-    .header__divider--tablet-only {
+    .header__button,
+    .header__divider {
         display: none;
     }
 
@@ -284,7 +300,7 @@
 
     .services__title {
         margin-right: auto;
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .services__actions {
@@ -299,7 +315,7 @@
     }
 
     .services__action-icon {
-        display:none;
+        display: block;
     }
 
     .navigation {
